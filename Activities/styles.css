@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    /* background-image: url('../Assets/bg-3.jpg'); */
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #018A97; /* Uncommented and set a dark background color */
+    color: white;
+    position: sticky;
+    top: 0; /* Keeps the navbar at the top of the page when scrolling */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    /* padding: 20px; */
+    margin: 4px;
+    
+}
+.explora-text, .serendib-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.explora-text{
+ color: white;
+}
+
+.serendib-text {
+    letter-spacing: 3px;
+    color: black;
+}
+
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+/* ////////////// */
+/* Section Styling */
+.section-container {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-container h2 {
+    font-size: 2em;
+    color: #018A97;
+    margin-bottom: 20px;
+}
+
+.section-container p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Activity Cards Container */
+.activity-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Activity Card Styling */
+.activity-card { 
+    width: 300px;
+     padding: 20px; 
+     background-color: #f0f8ff; 
+     border-radius: 10px; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+     text-align: left; }
+.activity-img img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 15px; }
+
+.activity-card h3 {
+    font-size: 1.5em;
+    color:#018A97;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #333;
+        width: 90vw;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+        gap: 0px;
+    }
+    
+    
+    .navbar-menu a{
+        padding:15px ;
+    }
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .explora-text, .serendib-text {
+        font-size: 24px;
+    }
+
+
+
+    /* Section Styling */
+.section-container {
+    padding: 20px 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-container h2 {
+    font-size: 1.2em;
+    color: #018A97;
+    margin-bottom: 20px;
+}
+
+.section-container p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Activity Cards Container */
+.activity-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Activity Card Styling */
+.activity-card { 
+    width: 300px;
+     padding: 20px; 
+     background-color: #f0f8ff; 
+     border-radius: 10px; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+     text-align: left; }
+.activity-img img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 15px; }
+
+.activity-card h3 {
+    font-size: 1.5em;
+    color:#018A97;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+
+/* .activity-cards-container */
+.section-container p {
+    font-size: 0.8em;
+    
+    margin-bottom: 10px;
+}
+.section-container h2{
+    font-size: 20px;
+}
+
+/* Activity Cards Container */
+.activity-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Activity Card Styling */
+.activity-card { 
+    width: 300px;
+     padding: 20px; 
+     background-color: #f0f8ff; 
+     border-radius: 10px; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+     text-align: left;
+    }
+
+.activity-img img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 10px; }
+
+.activity-card h3 {
+    font-size: 1em;
+    
+}
+
+.activity-card p {
+    
+    font-size: 0.7em;
+}
+
+}
+
+
+@media (max-width: 320px) {
+    .explora-text, .serendib-text {
+        font-size: 16px;
+    }
+
+    .navbar-menu {
+        width: 90vw;
+        font-size: 0.7em;
+    }
+    .navbar-menu a{
+        padding:10px ;
+    }
+}

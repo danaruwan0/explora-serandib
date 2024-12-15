@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Explore Sri Lanka</title>
+  <style>
+    /* Body and General Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fc;
+      color: #333;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .about-header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400');
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-header h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .about-header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Section Styling */
+    .section {
+      margin: 40px 0;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Story Section */
+    .section h2 {
+      font-size: 2.2em;
+      color: #ff6f61;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Team Section */
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .team-member {
+      flex: 1 1 300px;
+      background-color: #fff;
+      border: none;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member img:hover {
+      transform: scale(1.1);
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      font-size: 1.4em;
+      color: #333;
+    }
+
+    .team-member p {
+      font-size: 1em;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* Testimonial Section */
+    .testimonials {
+      background-color: #fef8f7;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+      margin: 0 auto 20px;
+      max-width: 700px;
+      font-size: 1.1em;
+    }
+    
+    .testimonial span {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #ff6f61;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 2.2em;
+      }
+      .team-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Header -->
+  <header class="about-header">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Join us in a journey through Sri Lanka's natural beauty and rich cultural heritage.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Our Story Section -->
+    <section class="section">
+      <h2>Our Story</h2>
+      <p>Our journey began with a passion to showcase the wonders of Sri Lanka. From the lush mountains to the pristine beaches, we aim to create unforgettable experiences for every traveler. Discover the hidden gems of this enchanting island with us.</p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+      <h2>Why Choose Us?</h2>
+      <p>With a commitment to sustainable tourism and personalized experiences, our team of experts provides high-quality tours that cater to all types of travelers. Our local knowledge ensures you experience Sri Lanka in the most authentic way possible.</p>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="section">
+      <h2>Meet the Team</h2>
+      <div class="team-section">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/120" alt="John Doe">
+          <h3>John Doe</h3>
+          <p>Co-Founder & Travel Guide</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/120" alt="Jane Smith">
+          <h3>Jane Smith</h3>
+          <p>Marketing Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/120" alt="Amara Silva">
+          <h3>Amara Silva</h3>
+          <p>Local Guide</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+      <h2>What Our Clients Say</h2>
+      <p class="testimonial">"An incredible experience! The guides were friendly and shared amazing insights." <span>— Alex B.</span></p>
+      <p class="testimonial">"A perfect blend of adventure and relaxation. Highly recommend!" <span>— Sarah T.</span></p>
+      <p class="testimonial">"Sri Lanka's beauty exceeded my expectations, thanks to this team!" <span>— Michael R.</span></p>
+    </section>
+
+  </div>
+
+</body>
+</html>

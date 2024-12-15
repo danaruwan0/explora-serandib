@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Serendib</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <label class="explora-text">EXPLORA</label>
+            <label class="serendib-text">Serendib</label>
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="/Home page/index.html">Home</a>
+            <a href="/Activities/index.html">Activities</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="/About Us/index.html">About Us</a>
+            <div class="dropdown">
+                <button>Dropdown Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Hotel</a>
+                    <a href="#">National Park Tours</a>
+                    <a href="#">Beach Side</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Package Item -->
+    <div class="package-card" id="packageCard">
+        <div class="package-image">
+            <img src="/Assets/Historical Ruins.jpg" alt="Historical Ruins">
+        </div>
+        <div class="package-content">
+            <h2 class="package-title">Explore Sigiriya</h2>
+            <p class="package-description">Experience the wonder of Sigiriya, an ancient rock fortress with breathtaking views and cultural heritage.</p>
+            <p class="package-price">$250 per person</p>
+            <button class="book-btn" onclick="showPaymentCard()">Book Now</button>
+        </div>
+    </div>
+
+    <!-- Payment Card -->
+    <div class="payment-card" id="paymentCard">
+        <h2 class="payment-title">Payment Details</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardType">Card Type</label>
+                <select id="cardType" required>
+                    <option value="">Select Card Type</option>
+                    <option value="Credit">Credit Card</option>
+                    <option value="Debit">Debit Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cardName">Name on Card</label>
+                <input type="text" id="cardName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444" required>
+            </div>
+            <div class="form-group">
+                <label for="expDate">Expiry Date</label>
+                <input type="text" id="expDate" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" placeholder="123" required>
+            </div>
+            <button type="button" class="pay-btn" onclick="processPayment()">Pay Now</button>
+            <button type="button" class="clear-btn" onclick="clearForm()">Clear</button>
+        </form>
+        <p class="error" id="errorMsg">Please fill in all fields correctly.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
